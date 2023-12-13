@@ -7,9 +7,8 @@ const Practice = () => {
   let allStudents = [
     {firstName:"Jenny", lastName:"Anniston"},
     {firstName:"Dwayne", lastName:"Johnson"},
-    {firstName:"Nike", lastName:"Adidas"},
     {firstName:"Jason", lastName:"Bourne"},
-    {firstName:"Selena", lastName:"Gomez"}
+    {firstName:"Indiana", lastName:"Jones"}
   ]
   // const myStyle = {
     //   color:'yellow',
