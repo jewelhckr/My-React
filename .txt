@@ -1,0 +1,32 @@
+Imagine Dragons ~ https://open.spotify.com/artist/53XhwfbYqKCa1cC15pYq2q?si=dHdcPmqtS72MQ5uMbggfJw
+
+d9bea5f920ee40de8495de374d345f61 ~ secret
+
+5c326b0749de411d8681bf29220cefc9 ~ user Id
+
+https://api.spotify.com/v1/playlists/{playlist_id}/tracks ~ endPoint
+3cEYpjA9oz9GiPac4AsH4n ~ playlist_id
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{/* <BelowNav/>
+      <Cards/>
+      <BelowCards/>
+      <Footer/> */}
+      {/* <SignUp/> */}
+      {/* <UseState/> */}
+      {/* <Button style="btn bg-info rounded mx-3" title="Save"/>
+      <Button style="btn bg-info rounded mx-3" title="Edit"/>
+      <Button style="btn bg-info rounded mx-3" title="Delete"/> */}

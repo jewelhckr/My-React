@@ -1,0 +1,272 @@
+.main {
+    background-color: white;
+    /* padding: 1em; */
+    padding-bottom: 1.1em;
+    border-radius: 15px;
+    /* margin: 1em; */
+    margin-bottom: 50px;
+  }
+  main{
+    padding-bottom: 50px;
+  }
+  
+  .loader {
+    display: flex;
+    flex-direction: row;
+    height: 4em;
+    padding-left: 5px;
+    padding-right: 5px;
+    transform: rotate(180deg);
+    justify-content: right;
+    border-radius: 10px;
+    transition: 0.4s ease-in-out;
+  }
+  
+  .loader:hover {
+    cursor: pointer;
+    background-color: rgb(243, 241, 241);
+  }
+  
+  .currentplaying {
+    display: flex;
+    margin: 1em;
+    padding: 10px;
+    background-color: white;
+    z-index: 99;
+  }
+  
+  .spotify {
+    width: 50px;
+    height: 50px;
+    margin-right: 0.6em;
+  }
+  
+  .heading {
+    color: black;
+    font-size: 1.1em;
+    font-weight: bold;
+    align-self: center;
+  }
+  
+  .loading {
+    display: flex;
+    align-items: center;
+    /* margin-top: 20px; */
+    margin-left: 10px;
+  }
+  
+  .load {
+    width: 2px;
+    height: 33px;
+    background-color: rgb(205, 50, 50);
+    animation: 1s move6 infinite;
+    border-radius: 5px;
+    margin: 0.1em;
+  }
+  
+  .load:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  
+  .load:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+  
+  .load:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  
+  .loading1 {
+    display: flex;
+    align-items: center;
+    /* margin-top: 20px; */
+    margin-left: 10px;
+  }
+  .load1 {
+    width: 6px;
+    background-color: rgb(205, 50, 50);
+    animation: 1s move6 infinite;
+    border-radius: 5px;
+    margin: 0.1em;
+  }
+  
+  .load1:nth-child(1) {
+    animation-delay: 0.2s;
+  }
+  
+  .load1:nth-child(2) {
+    animation-delay: 0.4s;
+  }
+  
+  .load1:nth-child(3) {
+    animation-delay: 0.6s;
+  }
+  
+  .play {
+    position: relative;
+    left: 0.35em;
+    height: 1.6em;
+    width: 1.6em;
+    clip-path: polygon(50% 50%, 100% 50%, 75% 6.6%);
+    background-color: black;
+    transform: rotate(-90deg);
+    align-self: center;
+    margin-top: 0.7em;
+    justify-self: center;
+  }
+  
+  .albumcover {
+    position: relative;
+    margin-right: 1em;
+    height: 40px;
+    width: 40px;
+    background-color: rgb(233, 232, 232);
+    align-self: center;
+    border-radius: 5px;
+  }
+  
+  .song {
+    position: relative;
+    transform: rotate(180deg);
+    margin-right: 1em;
+    color: black;
+    align-self: center;
+  }
+  
+  .artist {
+    font-size: 0.6em;
+  }
+  
+  @keyframes move6 {
+    0% {
+      height: 0.2em;
+    }
+  
+    25% {
+      height: 0.7em;
+    }
+  
+    50% {
+      height: 1.5em;
+    }
+  
+    100% {
+      height: 0.2em;
+    }
+  }
+  
+  /* styling for the audio player */
+  
+  .audio-player {
+    width: 100%;
+    margin-top: 20px;
+    /* border: 2px solid red; */
+    width: 100%;
+    background-color: #ffffff;
+    /* border: 1px solid #ddd; */
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+  }
+  
+  .audio-player::-webkit-media-controls-panel {
+    background-color: #ffffff !important;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .audio-player::-webkit-media-controls-play-button { 
+    /* display: none !important; */
+   }
+  
+  .audio-player::-webkit-media-controls-timeline
+  {
+    display: block;
+  }
+  
+  .audio-player::-webkit-media-controls-start-playback-button,
+  .audio-player::-webkit-media-controls-current-time-display,
+  .audio-player::-webkit-media-controls-time-remaining-display,
+  .audio-player::-webkit-media-controls-time-remaining-display,
+  .audio-player::-webkit-media-controls-menu{
+    display: none !important;
+  }
+  
+  
+  /* Your existing CSS styles */
+  
+  /* Dark mode styles */
+  .dark-mode {
+    background-color: #1a1a1a; /* Dark background color */
+    color: #ffffff; /* Light text color */
+  }
+  
+  .dark-mode .loader:hover {
+    background-color: #333; /* Darker background color on hover */
+  }
+  
+  .dark-mode .currentplaying {
+    background-color: #1a1a1a; /* Dark background color for currently playing section */
+  }
+  
+  .dark-mode .heading {
+    color: #ffffff; /* Light text color for headings */
+  }
+  
+  /* Add more styles as needed for dark mode */
+  /* Dark mode styles */
+  .dark-mode .loader {
+    background-color: #333; /* Darker background color */
+  }
+  
+  .dark-mode .song {
+    color: #ffffff; /* Light text color for song information */
+  }
+  
+  .dark-mode .artist {
+    color: #cccccc; /* Lighter text color for artist information */
+  }
+  
+  .dark-mode .loading .load {
+    background-color: #f02727; /* Light color for loading animation */
+  }
+  
+  .dark-mode .audioCon {
+    background-color: #000000; /* Dark background color for audio player */
+    /* border: 1px solid #666; Darker border color */
+  }
+  
+  .dark-mode .audio-player::-webkit-media-controls-panel {
+    background-color: #ffffff !important; /* Dark background color for media controls */
+   
+  }
+  
+  .dark-mode .audio-player::-webkit-media-controls-current-time-display,
+  .dark-mode .audio-player::-webkit-media-controls-time-remaining-display {
+    color: #ffffff !important; /* Light text color for time display */
+  }
+  
+  .dark-mode .main{
+    background-color: black;
+  }
+  .dark-mode .audio-player{
+    background-color: black;
+  }
+  
+  
+  
+  
+  @media screen and (max-width:475px){
+    .audio-player {
+    width: 100%;
+    margin-top: 20px;
+    /* border: 2px solid red; */
+    width: 100%;
+    background-color: #ffffff;
+    /* border: 1px solid #ddd; */
+    border-radius: 5px;
+    padding: 10px;
+    outline: none;
+  }
+    
+  }
